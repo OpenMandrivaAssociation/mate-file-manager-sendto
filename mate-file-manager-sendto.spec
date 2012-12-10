@@ -1,11 +1,11 @@
 Summary:	Send files from caja using with mail or IM
 Name:		mate-file-manager-sendto
-Version:	1.2.0
+Version:	1.4.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://mate-desktop.org
-Source0:	http://pub.mate-desktop.org/releases/1.2/%{name}-%{version}.tar.xz
+Source0:	http://pub.mate-desktop.org/releases/1.4/%{name}-%{version}.tar.xz
 
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
@@ -99,6 +99,7 @@ find %buildroot -name *.la | xargs rm
 # this might need to be removed
 %{_libdir}/caja/extensions-2.0/libcaja-sendto.so
 %{_libdir}/caja-sendto/plugins/libnstburn.so
+%{_libdir}/caja-sendto/plugins/libnstemailclient.so
 %{_libdir}/caja-sendto/plugins/libnstgajim.so
 %{_libdir}/caja-sendto/plugins/libnstremovable_devices.so
 %{_datadir}/caja-sendto/
@@ -119,4 +120,11 @@ find %buildroot -name *.la | xargs rm
 %doc %{_datadir}/gtk-doc/html/caja-sendto/
 %{_includedir}/caja-sendto/
 %{_libdir}/pkgconfig/caja-sendto.pc
+
+
+
+%changelog
+* Mon Jun 04 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.2.0-1
++ Revision: 802250
+- imported package mate-file-manager-sendto
 
