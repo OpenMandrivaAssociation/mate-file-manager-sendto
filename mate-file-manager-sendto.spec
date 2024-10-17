@@ -4,7 +4,7 @@ Version:	1.4.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://mate-desktop.org
+Url:		https://mate-desktop.org
 Source0:	http://pub.mate-desktop.org/releases/1.4/%{name}-%{version}.tar.xz
 
 BuildRequires:	gtk-doc
